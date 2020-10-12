@@ -4,7 +4,21 @@
     --links: #a1e89b;
     --terminal_text: #40ff00;
     --terminal: black;
-  }
+}
+
+@keyframes wave-animation {
+    /* Thanks to Jake Jarvis for this animation!
+       https://jarv.is/notes/css-waving-hand-emoji/ 
+    */
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
 
 html {
     font-family: 'Montserrat', Arial;
@@ -33,6 +47,11 @@ body {
 
 #wave {
     margin-bottom: 0rem;
+    animation-name: wave-animation;  
+    animation-duration: 2s;       
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;   
+    /* Wave animation once again from above!*/  
 }
 
 #links {
