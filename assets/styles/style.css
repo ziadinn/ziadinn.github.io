@@ -42,7 +42,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 90%;
+    min-height: 100%;
 }
 
 #wave {
