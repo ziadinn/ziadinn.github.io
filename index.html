@@ -1,29 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-        <title>Ziadin N</title>
-        <link rel="icon" href="assets/imgs/favicon.ico"">
-    </head>
-    <body>
-        <div id="container">
-            <h1 id="wave">👋</h1>
-            <div id="about-container">
-                <ul id="desc">
-                    <li>[ziadin@npc ~]$ python3 info.py</li>
-                    <li>I'm Ziadin Navarro, a sophomore who's majoring in Computer Science @ De Anza College</li>
-                    <li>[ziadin@npc ~]$ java college</li>
-                    <li>I will be transferring to a 4 year university by next fall!</li>
-                    <li>[ziadin@npc ~]$ ./job.exe</li>
-                    <li>I currently work as a part-time Computer Science Tutor @ De Anza College</li>
-                </ul>
-            </div>
-            <ul id="links">
-                <li><a target="_blank" href="https://github.com/kyuusk">GitHub</a></li>
-                <li><a target="_blank" href="https://drive.google.com/file/d/1YQUGlnzd0UEp6shjThSOGS7olwuKPaHe/view?usp=sharing">Resume</a></li>
-            </ul>
+<html lang="en">
+  <head>
+    <title>Home | Ziadin N</title>
+
+    <!-- SEO Stuff... -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Linking CSS Stuff -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Site Container -->
+    <div id="container">
+      <!-- Site headers -->
+      <header>
+        <a href="index.html" id="img-home">
+          <img
+            src="assets/cat-typing.gif"
+            alt="site profile picture"
+            id="pfp"
+          />
+        </a>
+
+        <div id="info">
+          <h1>Hey, hello! 👋</h1>
+          <p id="subtitle">I'm Ziadin, a computer science student</p>
+          <ul id="links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="https://github.com/kyuusk" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="assets/resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
         </div>
-    </body>
+      </header>
+
+      <!-- Main Site Content -->
+      <main>
+        <div class="paragraph">
+          <h2 class="header">About Me</h2>
+          <p class="desc">Hello, my name is Ziadin!</p>
+          <p class="desc">
+            I studied at De Anza College from 2019 to 2021. I am currently
+            pursuing a bachelor of science in computer science at Cal Poly in
+            San Luis Obispo.
+          </p>
+          <p class="desc">
+            When I'm not coding, I like to build custom mechanical keyboards.
+          </p>
+          <p class="desc">
+            If you're currently selling vintage computer peripherals, feel free
+            to send a message 😄
+          </p>
+        </div>
+
+        <div class="paragraph">
+          <h2 class="header">What I Used to Do</h2>
+          <p class="desc">
+            Previously, I used to be a computer science tutor within the CIS
+            department at De Anza.
+          </p>
+          <p class="desc">
+            As part of the job, I did one-on-one tutoring with students who
+            booked an appointment with me.
+          </p>
+          <p class="desc">
+            I also worked as a teaching assistant for two classes: CIS 41A
+            (Python Programming) and CIS 22C (Data Abstraction and Structures)
+          </p>
+        </div>
+
+        <div class="paragraph">
+          <h2 class="header">What I'm Currently Up To</h2>
+          <p class="desc">
+            I'm currently looking for internships for summer 2022.
+          </p>
+          <p class="desc">
+            I'm currently working on Shibot—a discord bot that automates
+            commonly used commands within my servers.
+          </p>
+          <p class="desc">
+            Outside of programming, I'm also currently working on a custom
+            high-end mechanical keyboard.
+          </p>
+        </div>
+
+        <a
+          href="mailto:ziadinnavarro4@gmail.com"
+          id="contact"
+          class="paragraph"
+        >
+          Interested? Click here to send me an email!
+        </a>
+      </main>
+    </div>
+  </body>
 </html>

@@ -1,109 +1,211 @@
-:root {
-    --background: #22262e;
-    --foreground: #efefef;
-    --links: #a1e89b;
-    --terminal_text: #40ff00;
-    --terminal: black;
+/* Set all margin and padding to 0 initially */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes wave-animation {
-    /* Thanks to Jake Jarvis for this animation!
-       https://jarv.is/notes/css-waving-hand-emoji/ 
-    */
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) } 
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+/* Some of our variables */
+:root {
+  --bg-color: #0f0f0f;
+  --pg-color: #1d1d1d;
+  --header-color: #fff;
+  --text-color: #bfbfbf;
+  --links-color: #4b71bd;
+  --form-accent: #664980;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 html {
-    font-family: 'Montserrat', Arial;
-    align-items: center;
+  scroll-behavior: smooth;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    background-color: var(--background);
-}
-
+html,
 body {
-    margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
+/* Set some defaults for our body */
+body {
+  /* "Roboto", sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  animation-name: fade;
+  animation-duration: 0.8s;
+  background-color: var(--bg-color);
+  color: var(--header-color);
+}
+
+/* Set defaults for our main site container div */
 #container {
-    margin: 0 auto; 
-    padding: 2.4rem 2.4rem 1rem 2.4rem; 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 30px 30px 30px;
 }
 
-#wave {
-    margin-bottom: 0rem;
-    animation-name: wave-animation;  
-    animation-duration: 2s;       
-    animation-iteration-count: infinite; 
-    transform-origin: 70% 70%;   
-    /* Wave animation once again from above!*/  
+/* Change settings for our header */
+#container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#img-home {
+  display: contents;
+}
+
+#pfp {
+  border-radius: 50%;
+  width: 130px;
+}
+
+/* Change setting for info div */
+#info {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.paragraph {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--pg-color);
+  border-radius: 10px;
+}
+
+#info h1 {
+  font-size: 40px;
+}
+
+#subtitle {
+  margin-top: 7px;
+  font-size: 15px;
+  color: var(--text-color);
 }
 
 #links {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
-    align-items: center;
-    display: table;
-    margin: 0 auto;
+  margin-top: 10px;
+  padding-left: 0px;
+  font-size: 15px;
+  list-style: none;
 }
 
 #links li {
-    display: inline;
-    font-size: 0.8rem;
-    margin-right: 0.5rem;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #links a {
-    color: white;
-    text-decoration: none;
-    border-bottom: 0.5px dotted var(--links);
+  text-decoration: none;
+  padding-bottom: 3px;
+  color: var(--links-color);
 }
 
-#links a:hover {
-    color: var(--links);
+/*
+  Code was from https://codepen.io/martinwolf/pen/eNNdme 
+  Changed a bit to work specifically for my site
+*/
+
+#links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--links-color);
+  transition: width 0.2s;
 }
 
-#desc {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 0;
+#links a:hover::after {
+  width: 100%;
 }
 
-#desc li {
-    font-size: 1rem;
-    color: var(--terminal_text);
+.header {
+  font-size: 28px;
+  text-align: center;
 }
 
-#about-container {
-    margin-top: 2rem;
-    background-color: var(--terminal);
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    font-family: "Inconsolata";
-    margin-bottom: 2rem;
+.desc {
+  margin-top: 10px;
+  margin-left: 5px;
+  color: var(--text-color);
+  line-height: 150%;
+  font-size: 15px;
 }
 
-#wave {
-    font-size: 3.5rem;
-    text-align: center;
+.item-desc {
+  margin-top: 3px;
+  margin-left: 5px;
+  color: var(--text-color);
+  line-height: 150%;
+  font-size: 15px;
 }
 
-* {
-    box-sizing: border-box;
+hr {
+  margin: 30px auto 0px auto;
+}
+
+#contact {
+  background-color: var(--form-accent);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--header-color);
+}
+
+/* In case I wanna do something with mobile displays
+
+@media screen and (min-width: 550px) {
+
+}
+
+*/
+
+/* Some settings for displays that's a bit over most mobile displays */
+@media screen and (min-width: 768px) {
+  #container header {
+    flex-direction: row;
+  }
+
+  #subtitle {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+
+  #links {
+    font-size: 16px;
+  }
+
+  .header {
+    text-align: left;
+  }
+
+  #info {
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 25px;
+  }
+
+  .desc {
+    margin-left: 0px;
+    font-size: 17px;
+  }
+
+  .item-desc {
+    margin-left: 0px;
+    font-size: 17px;
+  }
+
+  #contact a {
+    margin-left: 0px;
+  }
 }
