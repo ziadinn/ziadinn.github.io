@@ -14,9 +14,9 @@ html {
 
 .container {
   height: 100vh;
-  /* margin-left: 25%; */
   margin-left: 10%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
