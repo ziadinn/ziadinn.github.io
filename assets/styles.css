@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  /* margin-left: 25%; */
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sub-content {
+  margin-top: 30px;
+}
+
+.sub-content h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+main ul {
+  list-style: none;
+  margin-top: 8px;
+  padding: 0px;
+}
+
+main ul li {
+  list-style-position: inside;
+  margin-top: 4px;
+  color: #c1c1c1;
+}
+
+#links ul {
+  margin-top: 5px;
+  display: flex;
+  list-style: none;
+}
+
+#links ul li {
+  margin-right: 15px;
+}
+
+#links ul li a {
+  color: #3a86ff;
+  text-decoration: none;
+}
+
+#links a:hover,
+#links a:active,
+#links a:focus {
+  outline: 0;
+  color: white;
+  text-underline-offset: 6px;
+  text-decoration: underline;
+  transition-duration: 0.3s;
+}
+
+#quote {
+  padding-right: 20px;
+  margin-top: 30px;
+  color: #c1c1c1;
+}
+
+#quote figcaption {
+  margin-top: 5px;
+}
+
+#slo {
+  color: white;
+  text-underline-offset: 6px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #c69214;
+}
+
+#amz {
+  color: white;
+  text-underline-offset: 6px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #05a0d1;
+}
+
+@media only screen and (min-width: 1800px) {
+  .container {
+    margin-left: 20%;
+  }
+}
