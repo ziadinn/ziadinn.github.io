@@ -97,6 +97,12 @@ main ul li {
   text-decoration-color: #05a0d1;
 }
 
+@media only screen and (min-width: 1500px) {
+  .container {
+    margin-left: 14%;
+  }
+}
+
 @media only screen and (min-width: 1800px) {
   .container {
     margin-left: 20%;
