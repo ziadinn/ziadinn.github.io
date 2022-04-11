@@ -59,6 +59,7 @@ main ul li {
 #links ul li a {
   color: #3a86ff;
   text-decoration: none;
+  text-underline-offset: 6px;
 }
 
 #links a:hover,
