@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #0a0a0a;
+  background-color: hsl(210, 20%, 10%);
   color: white;
   font-family: "Inter", sans-serif;
 }
