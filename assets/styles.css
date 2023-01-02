@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: hsl(210, 20%, 10%);
+  background-color: #101010;
   color: white;
   font-family: "Inter", sans-serif;
 }
@@ -21,8 +21,9 @@ html {
 }
 
 header h1 {
-  font-size: 20px;
-  font-weight: 400;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .sub-content {
@@ -83,28 +84,35 @@ main ul li {
   margin-top: 5px;
 }
 
-#slo {
+.underline {
   color: white;
-  text-underline-offset: 6px;
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+#slo {
   text-decoration-color: #c69214;
 }
 
 #amz {
-  color: white;
-  text-underline-offset: 6px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
   text-decoration-color: #05a0d1;
 }
 
 #crwd {
-  color: white;
-  text-underline-offset: 6px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
   text-decoration-color: #fc0000;
+}
+
+@media only screen and (max-width: 340px) {
+  header h1 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  main ul li {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
