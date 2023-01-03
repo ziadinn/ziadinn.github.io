@@ -13,15 +13,21 @@ html {
 }
 
 .container {
-  height: 98vh;
+  height: 98.5vh;
   margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
+hr {
+  margin-top: 5px;
+  color: white;
+  width: 25px;
+}
+
 .top-color {
-  height: 2vh;
+  height: 1.5vh;
   width: 100%;
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
