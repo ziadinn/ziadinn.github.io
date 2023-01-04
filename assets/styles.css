@@ -39,7 +39,7 @@ header h1 {
   font-family: 'Satoshi', sans-serif;
   font-size: 30px;
   font-weight: 620;
-  background: linear-gradient(333deg,#aaa,#fff);
+  background: linear-gradient(333deg,rgb(97, 97, 97), #aaa,#fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
