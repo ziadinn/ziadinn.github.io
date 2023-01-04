@@ -22,7 +22,7 @@ html {
 
 hr {
   margin-top: 5px;
-  color: rgb(194, 194, 194);
+  background: linear-gradient(333deg,#aaa,#fff);
   width: 25px;
 }
 
@@ -39,6 +39,9 @@ header h1 {
   font-family: 'Satoshi', sans-serif;
   font-size: 30px;
   font-weight: 620;
+  background: linear-gradient(333deg,#aaa,#fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sub-content {
