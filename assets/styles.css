@@ -109,7 +109,7 @@ main ul li {
 }
 
 #slo {
-  text-decoration-color: #c69214;
+  text-decoration-color: #247053;
 }
 
 #amz {
@@ -118,6 +118,10 @@ main ul li {
 
 #crwd {
   text-decoration-color: #fc0000;
+}
+
+#pduty {
+  text-decoration-color: #06ac38;
 }
 
 @media only screen and (max-width: 340px) {
