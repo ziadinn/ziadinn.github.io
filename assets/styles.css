@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #101010;
+  background: #0c3131;
   color: white;
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,15 +16,19 @@ html {
 
 .container {
   height: 100vh;
-  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 3.5rem;
+  border: 1px solid #bcf6ad;
 }
 
 hr {
-  margin-top: 0.313rem;
-  background: linear-gradient(333deg,#aaa,#fff);
+  color: #bcf6ad;
   width: 1.5rem;
 }
 
@@ -32,7 +36,7 @@ header h1 {
   font-family: 'Satoshi', sans-serif;
   font-size: 1.875rem;
   font-weight: 620;
-  background: linear-gradient(333deg,rgb(97, 97, 97), #aaa,#fff);
+  background: linear-gradient(333deg,rgb(97, 97, 97), #eeeeee,#fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -56,7 +60,7 @@ main ul {
 main ul li {
   list-style-position: inside;
   margin-top: 0.25rem;
-  color: #c1c1c1;
+  color: #dad7d7;
 }
 
 #links ul {
@@ -118,7 +122,20 @@ main ul li {
   text-decoration-color: #06ac38;
 }
 
-@media only screen and (max-width: 21.25rem) {
+@media only screen and (max-width: 767px) {
+  main {
+    padding: 0;
+    border: 0;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+  }
+
   header h1 {
     font-family: 'Satoshi', sans-serif;
     font-size: 1.563rem;
@@ -127,17 +144,5 @@ main ul li {
 
   main ul li {
     font-size: 0.875rem;
-  }
-}
-
-@media only screen and (min-width: 93.75rem) {
-  .container {
-    margin-left: 14%;
-  }
-}
-
-@media only screen and (min-width: 112.5rem) {
-  .container {
-    margin-left: 20%;
   }
 }
