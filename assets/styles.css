@@ -53,6 +53,7 @@ header h1 {
 
 section {
   margin-top: 1.875rem;
+  padding-right: 1.25rem;
 }
 
 section h3 {
@@ -71,6 +72,7 @@ main ul li {
   list-style-position: inside;
   margin-top: 0.25rem;
   color: #dad7d7;
+  line-height: 1.25;
 }
 
 #links ul {
