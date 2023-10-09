@@ -28,7 +28,7 @@ main {
 }
 
 hr {
-  color: #bcf6ad;
+  border-color: #bcf6ad;
   width: 1.5rem;
 }
 
