@@ -32,6 +32,11 @@ hr {
   width: 1.5rem;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 header h1 {
   font-family: 'Satoshi', sans-serif;
   font-size: 1.875rem;
@@ -39,6 +44,11 @@ header h1 {
   background: linear-gradient(333deg,rgb(97, 97, 97), #eeeeee,#fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-right: 1rem;
+}
+
+.roll {
+  height: 1.875rem;
 }
 
 section {
@@ -140,6 +150,10 @@ main ul li {
     font-family: 'Satoshi', sans-serif;
     font-size: 1.563rem;
     font-weight: 700;
+  }
+
+  .roll {
+    height: 1.563rem;
   }
 
   main ul li {
