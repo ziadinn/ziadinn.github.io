@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-  height: 100dvh;
+  height: 100svh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
