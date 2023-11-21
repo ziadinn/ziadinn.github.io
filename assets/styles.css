@@ -15,7 +15,7 @@ html {
 }
 
 .container {
-  height: 100svh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -160,5 +160,11 @@ main ul li {
 
   main ul li {
     font-size: 0.875rem;
+  }
+}
+
+@supports (height: 100svh) {
+  .container {
+    height: 100svh;
   }
 }
